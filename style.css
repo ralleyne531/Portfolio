@@ -42,3 +42,24 @@ header{
     background-color: blue;
     width: 100%;
 }
+.projects{
+    background-color: blueviolet;
+    height: max-content;
+    width: max-content;
+}
+.project{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.project img{
+    width:150px;
+    height: 150px;
+    margin: 0;
+}
+.project p{
+    box-sizing: border-box;
+    border-left: black, 100px, solid;
+    border-right: black, 100px, solid;
+    margin: 10px 10px;
+}
