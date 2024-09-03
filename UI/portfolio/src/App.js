@@ -14,10 +14,10 @@ function App() {
   return (
     <>
     <div className="App">
-      <navbar>
-        Nav
+      <hero>
+        Hero
         <button onClick={toggleSidebar}>Button</button>
-      </navbar>
+      </hero>
       <aside class={isSidebarHidden ? "" : 'show'}>side</aside>
       <main>
       Main
