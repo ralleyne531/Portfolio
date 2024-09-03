@@ -1,27 +1,62 @@
 .App {
-  text-align: center;
+  text-align: left;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas: "navbar navbar"
-  "sidebar content"
-  "sidebar footer";
+  "main sidebar"
+  "footer sidebar";
   min-height: 100vh;
 }
 
 navbar{
+  position: sticky;
+  top:0;
   background-color:aqua;
   grid-area: navbar;
+  padding: 1em;
 }
+
+button{
+  display: none;
+}
+
 aside{
-  background-color:red;
+  height: calc(100vh - 50px);
+  position: sticky;
+  align-self: start;
+  top:50px;
+  background-color:rgba(255, 0, 0, 0.465);
   grid-area: sidebar;
 }
 
-content{
+main{
   background-color:yellow;
-  grid-area: content;
+  grid-area: main;
 }
 footer{
   background-color:grey;
   grid-area: footer;
+  padding: 2em;
+}
+
+@media(max-width: 800px){
+  .App{
+    grid-template-columns: 1fr;
+  }
+
+  button{
+    display: inline;
+  }
+
+  aside{
+    position: fixed;
+    width: 300px;
+    display: none;
+    right: 0;
+  }
+
+  .show{
+    display:block;
+  }
 }
