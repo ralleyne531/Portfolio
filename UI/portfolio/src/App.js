@@ -18,7 +18,15 @@ function App() {
         Nav
         <button onClick={toggleSidebar}>Button</button>
       </navbar>
-      <aside class={isSidebarHidden ? "" : 'show'}>side</aside>
+      <aside class={isSidebarHidden ? "" : 'show'}>
+        <ul>
+          <li>home</li>
+          <li>about</li>
+          <li>work</li>
+          <li>interests</li>
+          <li>contact</li>
+        </ul>
+        </aside>
       <main>
       Main
       </main>
