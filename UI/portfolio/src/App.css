@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: "navbar navbar"
+  "sidebar content"
+  "sidebar footer";
+  min-height: 100vh;
+}
+
+navbar{
+  background-color:aqua;
+  grid-area: navbar;
+}
+aside{
+  background-color:red;
+  grid-area: sidebar;
+}
+
+content{
+  background-color:yellow;
+  grid-area: content;
+}
+footer{
+  background-color:grey;
+  grid-area: footer;
+}
