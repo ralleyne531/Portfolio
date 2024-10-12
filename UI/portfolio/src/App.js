@@ -1,4 +1,5 @@
 import './App.css';
+import Sidebar from './Components/Sidebar'
 import React from 'react'
 
 function App() {
@@ -18,14 +19,8 @@ function App() {
         Nav
         <button onClick={toggleSidebar}>Button</button>
       </navbar>
-      <aside class={isSidebarHidden ? "" : 'show'}>
-        <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>work</li>
-          <li>interests</li>
-          <li>contact</li>
-        </ul>
+      <aside className={isSidebarHidden ? "" : 'show'}>
+        <Sidebar/>
         </aside>
       <main>
       Main
