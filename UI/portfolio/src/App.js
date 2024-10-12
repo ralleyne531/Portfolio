@@ -1,4 +1,5 @@
 import './App.css';
+import Hero from "./Components/Hero";
 import React from 'react'
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     <>
     <div className="App">
       <hero>
-        Hero
+        <Hero/>
         <button onClick={toggleSidebar}>Button</button>
       </hero>
       <aside class={isSidebarHidden ? "" : 'show'}>side</aside>
