@@ -3,17 +3,17 @@
   display: grid;
   grid-template-columns: 1fr 300px;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "navbar navbar"
+  grid-template-areas: "hero hero"
   "main sidebar"
   "footer sidebar";
   min-height: 100vh;
 }
 
-navbar{
+hero{
   position: sticky;
   top:0;
   background-color:aqua;
-  grid-area: navbar;
+  grid-area: hero;
   padding: 1em;
 }
 

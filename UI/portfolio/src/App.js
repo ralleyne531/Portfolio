@@ -1,4 +1,5 @@
 import './App.css';
+import Hero from "./Components/Hero";
 import React from 'react'
 
 function App() {
@@ -14,11 +15,11 @@ function App() {
   return (
     <>
     <div className="App">
-      <navbar>
-        Nav
+      <hero>
+        <Hero/>
         <button onClick={toggleSidebar}>Button</button>
-      </navbar>
-      <aside class={isSidebarHidden ? "" : 'show'}>side</aside>
+      </hero>
+      <aside className={isSidebarHidden ? "" : 'show'}>side</aside>
       <main>
       Main
       </main>
