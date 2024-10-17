@@ -1,5 +1,6 @@
 import './App.css';
 import Sidebar from './Components/Sidebar'
+import Hero from './Components/Hero'
 import React from 'react'
 
 function App() {
@@ -21,7 +22,6 @@ function App() {
       </hero>
       <aside className={isSidebarHidden ? "" : 'show'}>side</aside>
         <Sidebar/>
-        </aside>
       <main>
       Main
       </main>
