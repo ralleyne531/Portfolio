@@ -20,8 +20,11 @@ function App() {
         <Hero/>
         <button onClick={toggleSidebar}>Button</button>
       </hero>
-      <aside className={isSidebarHidden ? "" : 'show'}>side</aside>
+
+      <aside className={isSidebarHidden ? "" : 'show'}>
         <Sidebar/>
+      </aside>
+
       <main>
       Main
       </main>
