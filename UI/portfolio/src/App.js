@@ -3,30 +3,24 @@ import Sidebar from './Components/Sidebar'
 import Hero from './Components/Hero'
 import React from 'react'
 
+
 function App() {
   const[isSidebarHidden, setIsSidebarHidden] = React.useState(true)
   const toggleSidebar = () => {
-    if(isSidebarHidden){
-      setIsSidebarHidden(false)
-    }else{
-      setIsSidebarHidden(true)
-    }
+    setIsSidebarHidden(!isSidebarHidden);
   }
 
   return (
     <>
     <div className="App">
-      <hero>
-        <Hero/>
-        <button onClick={toggleSidebar}>Button</button>
-      </hero>
+      <Hero toggleSidebar = {toggleSidebar} />
 
-      <aside className={isSidebarHidden ? "" : 'show'}>
+      <aside className={isSidebarHidden ? " " : "show"}>
         <Sidebar/>
       </aside>
 
       <main>
-      Main
+      Mainl
       </main>
       <footer>footer</footer>
     </div>

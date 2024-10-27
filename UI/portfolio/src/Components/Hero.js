@@ -1,8 +1,12 @@
 import React from 'react';
-export default function Hero(){
+import './Hero.css';
+
+export default function Hero({toggleSidebar}){
+
     return(
-    <>
-        Hello from Hero!
-    </>
+        <Hero>
+            <h1>[Name]</h1>
+            <button onClick={toggleSidebar}>Button</button>
+        </Hero>
     );
 }
