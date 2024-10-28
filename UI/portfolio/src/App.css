@@ -1,38 +1,58 @@
 .App {
   text-align: left;
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:"hero hero"
   "main sidebar"
   "footer footer";
   min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
-
+.hero {
+  position: sticky;
+  top:0;
+  background-color: lightgray;
+  grid-area: hero;
+  padding: 1em;
+  border: black 1px solid;
+}
 
 aside{
-  height: 100vh;
+  height: 100%;
   position: sticky;
   align-self: start;
-  background-color:rgba(255, 0, 0, 0.465);
+  background-color:lightgray;
   grid-area: sidebar;
   width: 300px;
   right: 0;
   display: none;
+  border: black 1px inset;
 }
 
 main{
-  background-color:yellow;
+  background-color:lightgray;
   grid-area: main;
   width: 100%;
-}
-footer{
-  background-color:grey;
-  grid-area: footer;
-  padding: 2em;
+  border: black 1px solid;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }
 
-aside.show{
+main::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+footer{
+  background-color:lightgray;
+  grid-area: footer;
+  padding: 2em;
+  border: black 1px solid;
+}
+
+aside.show {
   display: block;
 }

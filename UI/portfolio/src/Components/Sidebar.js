@@ -1,14 +1,12 @@
 import React from "react";
 
-export default function Sidebar(){
-
+function Sidebar(){
     return(
         <ul>
-            <li><a href={"#"}>Home</a></li>
-            <li><a href={"#"}>about</a></li>
-            <li><a href={"#"}>work</a></li>
-            <li><a href={"#"}>interests</a></li>
-            <li><a href={"#"}>contact</a></li>
+            <li>Hello World</li>
+            <li>~sidebar</li>
         </ul>
     )
 }
+
+export default Sidebar
