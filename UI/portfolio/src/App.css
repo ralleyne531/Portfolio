@@ -46,6 +46,10 @@ main::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
 }
 
+.portfolio-section{
+  background-color: cornflowerblue;
+  max-width: 75vw;
+}
 footer{
   background-color:lightgray;
   grid-area: footer;

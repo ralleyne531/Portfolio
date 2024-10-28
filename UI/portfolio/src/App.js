@@ -2,6 +2,7 @@ import './App.css';
 import Sidebar from './Components/Sidebar'
 import Hero from './Components/Hero.js'
 import React from 'react'
+import PorfolioSection from "./Components/PorfolioSection";
 function App() {
   const[isSidebarHidden, setIsSidebarHidden] = React.useState(true)
   const toggleSidebar = () => {
@@ -16,6 +17,7 @@ function App() {
           <Sidebar/>
         </aside>
         <main>
+          <PorfolioSection/>
           Hello World ~ main
           <h1>Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare magna nam inceptos sollicitudin morbi tincidunt lacinia fusce. Varius penatibus posuere purus integer consectetur praesent. Varius malesuada sagittis ridiculus lacinia suspendisse diam morbi sociosqu adipiscing. Aliquam urna efficitur faucibus nibh id arcu ultricies interdum. Nostra sem egestas nisl tortor torquent habitasse.
 
