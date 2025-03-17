@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const ContactButton = styled.button`
-  width: 8%;
-  height: 25%;
-  border-radius: 50%;
+  width: 88px;
+  height: 56px;
+  border-radius: 17px;
   font-size: 14px;
   font-weight: bold;
   border: none;
@@ -15,7 +15,7 @@ const ContactButton = styled.button`
   transition: background 0.3s, color 0.3s;
 
   /* Open for Work (Green & Bright) */
-  background: ${({ open }) => (open ? "#4CAF50" : "#888")};
+  background: ${({ open }) => (open ? "radial-gradient(#4CAF50,#45a049)" : "#888")};
   color: ${({ open }) => (open ? "white" : "#ccc")};
   box-shadow: ${({ open }) =>
           open ? "0px 4px 6px rgba(0, 128, 0, 0.3)" : "none"};
@@ -27,12 +27,13 @@ const ContactButton = styled.button`
 
 // Main Component
 const ContactStatus = () => {
-    const [isOpen, setIsOpen] = useState(true); // Default: Open for Work
+    let isOpen = true;
+    // const [isOpen, setIsOpen] = useState(true); // Default: Open for Work
 
     return (
-        <ContactButton open={isOpen} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Open for Work" : "Closed for Work"}
-        </ContactButton>
+        <a href={"mailto:ralleyne531@gmail.com"} target={"_blank"} rel={"noreferrer"} style={{textDecoration:0,marginRight:"65%"}}> <ContactButton open={isOpen}>
+            {isOpen ? "Open to Work" : "Unavailable for Work"}
+        </ContactButton></a>
     );
 };
 
