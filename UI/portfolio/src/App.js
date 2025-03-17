@@ -1,6 +1,6 @@
 import './App.css';
-import Sidebar from './Components/Sidebar'
-import Hero from './Components/Hero.js'
+import Sidebar from './Components/SidebarComponent/Sidebar'
+import Hero from './Components/HeroComponent/Hero.js'
 import React from 'react'
 import PorfolioSection from "./Components/PorfolioSection";
 function App() {
