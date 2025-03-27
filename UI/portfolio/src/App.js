@@ -1,6 +1,6 @@
 import './App.css';
 import Sidebar from './Components/SidebarComponent/Sidebar'
-import Hero from './Components/HeroComponent/Hero.js'
+import Header from './Components/HeaderComponent/header.js'
 import React from 'react'
 import PorfolioSection from "./Components/PorfolioSection";
 function App() {
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <Hero toggleSidebar={toggleSidebar}/>
+        <Header toggleSidebar={toggleSidebar}/>
         <aside className={isSidebarHidden ? " " : "show"}>
           <Sidebar/>
         </aside>

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import "./Hero.css"
+import "./header.css"
 import ContactStatus from "./contactStatus/ContactButton";
 
 
-function Hero({ toggleSidebar }) {
+function Header({ toggleSidebar }) {
     const [isMerged, setIsMerged] = useState(false);
 
     const sidebarAnimation = () => {
@@ -30,4 +30,4 @@ function Hero({ toggleSidebar }) {
     );
 }
 
-export default Hero;
+export default Header;
