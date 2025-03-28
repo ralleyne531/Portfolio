@@ -34,12 +34,13 @@ const StyledHero = styled.div`
     font-size: 2rem;
     letter-spacing: 5px;
     text-transform: uppercase;
+    margin-top: 0;
   }
 
   p {
     font-family: "SuperCottage", serif;
     color: #101010;
-    font-size: 1rem;
+    font-size: 14px;
     text-transform: uppercase;
   }
 
