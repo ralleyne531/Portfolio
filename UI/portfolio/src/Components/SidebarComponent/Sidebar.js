@@ -3,8 +3,11 @@ import React from "react";
 function Sidebar(){
     return(
         <ul>
-            <li>Hello World</li>
-            <li>~sidebar</li>
+            <li>About</li>
+            <li>Experience</li>
+            <li>Projects</li>
+            <li>Skills</li>
+            <li>Interests</li>
         </ul>
     )
 }
