@@ -2,7 +2,7 @@
   text-align: left;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr;
   grid-template-areas:"hero hero"
   "main sidebar"
   "footer footer";
@@ -46,10 +46,6 @@ main::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
 }
 
-.portfolio-section{
-  background-color: cornflowerblue;
-  max-width: 75vw;
-}
 footer{
   background-color:lightgray;
   grid-area: footer;
