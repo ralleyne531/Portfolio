@@ -2,9 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 
 const StyledHero = styled.div`
-  
   text-align: center;
-
 `;
 function Hero(){
 

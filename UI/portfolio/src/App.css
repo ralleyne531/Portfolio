@@ -91,7 +91,15 @@ p{
   color: #101010;
   font-size: 14px;
   text-transform: uppercase;
+  justify-self: center;
+  width: 50%;
 }
+
+img{
+  width:50%;
+  object-fit: cover;
+}
+
 footer{
   background-color:lightgray;
   grid-area: footer;
