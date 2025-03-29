@@ -37,13 +37,6 @@ const StyledHero = styled.div`
     margin-top: 0;
   }
 
-  p {
-    font-family: "SuperCottage", serif;
-    color: #101010;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
 `;
 function Hero(){
 
