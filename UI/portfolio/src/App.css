@@ -100,6 +100,10 @@ img{
   object-fit: cover;
 }
 
+svg{
+  justify-self: center;
+}
+
 footer{
   background-color:lightgray;
   grid-area: footer;
