@@ -28,15 +28,6 @@ const StyledHero = styled.div`
     text-transform: uppercase;
   }
 
-  h3 {
-    font-family: "IceCreamParty", serif;
-    color: #101010;
-    font-size: 2rem;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin-top: 0;
-  }
-
 `;
 function Hero(){
 
