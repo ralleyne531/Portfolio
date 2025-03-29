@@ -1,7 +1,7 @@
 import React from "react";
 import {
     AfterEffectsIcon, AWSIcon, CircleCIIcon, CPlusPlusIcon, CsharpIcon,
-    CSSIcon, DockerIcon, DotNetIcon, FigmaIcon, FlaskIcon, GitIcon,
+    CSSIcon, DockerIcon, DotNetIcon,ExpressIcon, FigmaIcon, FlaskIcon, GitIcon,
     GitHubIcon, HTMLIcon,IllustratorIcon, JavaIcon, JSIcon, MongoIcon, NodeIcon,PhotoshopIcon, PyIcon,
     ReactIcon, SplunkIcon, SQLIcon
 } from "../Icons";
@@ -24,6 +24,7 @@ function Skills() {
         },
         "Back-End Development": {
             NodeJs: NodeIcon,
+            Express: ExpressIcon,
             Flask: FlaskIcon,
             DotNet: DotNetIcon,
         },
