@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Hero from './Hero.js'
+import About from "./About";
+import Skills from "./Skills.js";
 import Experience from "./ExperienceComponent/Experience.js";
 
 // Define styles for the section
@@ -20,12 +22,7 @@ function PortfolioSection({ className }) {
             case 'hero':
                 return (<Hero></Hero>);
             case 'about':
-                return (
-                    <>
-                        <h2>About Me</h2>
-                        <p>Learn more about me and my journey.</p>
-                    </>
-                );
+                return (<About></About>);
             case 'experience':
                 return (<Experience></Experience>);
             case 'projects':
@@ -36,12 +33,7 @@ function PortfolioSection({ className }) {
                     </>
                 );
             case 'skills':
-                return (
-                    <>
-                        <h2>Skills</h2>
-                        <p>How I create solutions.</p>
-                    </>
-                );
+                return (<Skills></Skills>);
             case 'interests':
                 return (
                     <>
