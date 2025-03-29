@@ -61,11 +61,17 @@ h1{
   text-transform: uppercase;
 }
 
+h2 {
+  font-family: "IceCreamParty", serif;
+  color: #101010;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
 h3 {
   font-family: "IceCreamParty", serif;
   color: #101010;
   font-size: 2.5rem;
-  letter-spacing: 5px;
   text-transform: uppercase;
   margin: 0;
 }

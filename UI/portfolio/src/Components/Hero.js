@@ -20,14 +20,6 @@ const StyledHero = styled.div`
 
   text-align: center;
 
-  h2 {
-    font-family: "IceCreamParty", serif;
-    color: #101010;
-    font-size: 10rem;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-  }
-
 `;
 function Hero(){
 
