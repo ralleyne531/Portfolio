@@ -3,6 +3,9 @@ import styled from "styled-components";
 
 const StyledHero = styled.div`
   text-align: center;
+  p{
+    max-width: 50%;
+  }
 `;
 function Hero(){
 

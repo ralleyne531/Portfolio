@@ -6,6 +6,8 @@ const ProjectsDiv = styled.div`
   
   display: flex;
   gap:10px;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 function Projects(){
@@ -18,7 +20,7 @@ function Projects(){
             <ProjectsCard project={"NameWorkout"} creationDate={"February 2023"} stage={"Maintenance"} iconNames={["HTMLIcon", "CSSIcon", "JSIcon"]}></ProjectsCard>
             <ProjectsCard project={"ElevateEatsAPI"} creationDate={"May 2024"} stage={"Development"} iconNames={["JSIcon","MongoIcon","NodeIcon","ExpressIcon"]}></ProjectsCard>
             <ProjectsCard project={"EzEmailList"} creationDate={"October 2024"} stage={"Development"} iconNames={["PyIcon","SQLIcon","FlaskIcon","HTMLIcon"]}></ProjectsCard>
-            <ProjectsCard project={"Content Repost Tool"} creationDate={"TBA"} stage={"Analysis"}></ProjectsCard>
+            <ProjectsCard project={"Repurpose Clone"} creationDate={"TBA"} stage={"Analysis"}></ProjectsCard>
             </ProjectsDiv>
         </>
     )

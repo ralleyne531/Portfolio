@@ -6,10 +6,21 @@ const ProjectsCardDiv = styled.div`
   
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 0 fit-content;
   justify-content: flex-start;
+  border: 1px solid black;
   align-items: center;
   
+  svg{
+    justify-self: center;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+  }
+  
+  h4,p{
+    display: block;
+  }
 `
 
 function ProjectsCard({project,creationDate,stage,iconNames}){
