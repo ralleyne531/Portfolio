@@ -61,6 +61,13 @@ h1{
   text-transform: uppercase;
 }
 
+h4{
+  font-family: "Super Cottage", serif;
+}
+
+p{
+  font-family: "Super Cottage", serif;
+}
 footer{
   background-color:lightgray;
   grid-area: footer;
