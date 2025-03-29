@@ -3,12 +3,6 @@ import styled from "styled-components";
 import ProjectsCard from "./ProjectsCard";
 
 const ProjectsDiv = styled.div`
-    *{
-      
-      margin:0;
-      padding: 0;
-      box-sizing: border-box;
-    }
   
   display: flex;
   gap:10px;

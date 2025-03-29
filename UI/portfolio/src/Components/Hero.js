@@ -2,22 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 
 const StyledHero = styled.div`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  @font-face {
-    font-family: "IceCreamParty";
-    src: url("../fonts/IceCreamPartySolid.ttf");
-  }
-
-  @font-face {
-    font-family: "SuperCottage";
-    src: url("../fonts/SuperCottage.ttf");
-  }
-
+  
   text-align: center;
 
 `;

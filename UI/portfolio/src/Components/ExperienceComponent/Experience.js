@@ -3,11 +3,6 @@ import ExperienceCard from "./ExperienceCard";
 import styled from "styled-components";
 
 const ExperienceDiv = styled.div`
-     *{
-       margin: 0;
-       padding: 0;
-       box-sizing: border-box;
-     }
   
   display: flex;
   flex-direction: column;
