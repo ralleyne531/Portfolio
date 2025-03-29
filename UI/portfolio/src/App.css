@@ -54,6 +54,13 @@ main::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
 }
 
+h1{
+  font-family: "IceCreamParty", serif;
+  color: black;
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+
 footer{
   background-color:lightgray;
   grid-area: footer;
