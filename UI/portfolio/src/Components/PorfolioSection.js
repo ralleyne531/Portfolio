@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Hero from './Hero.js'
+import About from "./About";
 
 // Define styles for the section
 const StyledSection = styled.div`
@@ -19,12 +20,7 @@ function PortfolioSection({ className }) {
             case 'hero':
                 return (<Hero></Hero>);
             case 'about':
-                return (
-                    <>
-                        <h2>About Me</h2>
-                        <p>Learn more about me and my journey.</p>
-                    </>
-                );
+                return (<About></About>);
             case 'experience':
                 return (
                     <>
