@@ -1,8 +1,4 @@
-@font-face {
-        font-family: "IceCreamParty";
-        src:url("headerFont/IceCreamPartySolid.ttf");
-}
-.hero{
+.header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -1,9 +1,19 @@
+@font-face {
+  font-family: "IceCreamParty";
+  src:url("fonts/IceCreamPartySolid.ttf");
+}
+
+@font-face {
+  font-family: "SuperCottage";
+  src: url("fonts/SuperCottage.ttf");
+}
+
 .App {
   text-align: left;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
-  grid-template-areas:"hero hero"
+  grid-template-areas:"header header"
   "main sidebar"
   "footer footer";
   min-height: 100vh;
@@ -11,13 +21,11 @@
   overflow: hidden;
 }
 
-.hero {
+.header {
   position: sticky;
-  top:0;
   background-color: lightgray;
-  grid-area: hero;
-  padding: 1em;
-  border: black 1px solid;
+  grid-area: header;
+  padding: 0.375em;
 }
 
 aside{
