@@ -49,11 +49,11 @@ function Hero(){
 
     return (
         <StyledHero>
-            <h2>Rashidi Alleyne</h2>
-            <h3>SWE, UI/UX, GFX</h3>
-            <p>Hi! I’m Rashidi Alleyne, a creative technologist passionate about all things technology</p>
-            <p>I build sleek websites, code software, craft immersive graphics (2D & 3D), and aspire to create worlds in game design.</p>
-            <p>Bringing ideas to life, one pixel at a time</p>
+            <h1>Rashidi Alleyne</h1>
+            <h4>SWE, UI/UX, GFX</h4>
+            <p>Hi! I’m Rashidi Alleyne, a creative technologist passionate about all things technology.
+                I build sleek websites, code software, craft immersive graphics (2D & 3D), and aspire to create worlds in game design.
+                Bringing ideas to life, one pixel at a time</p>
         </StyledHero>
     );
 }

@@ -13,7 +13,7 @@ function Header({ toggleSidebar }) {
 
     return (
         <div className="header">
-            <h1>Rashidi Alleyne</h1>
+            <h3>Rashidi Alleyne</h3>
             <ContactStatus className={"contactMe"}></ContactStatus>
             <svg onClick={sidebarAnimation} className={isMerged? "merged" : ""} id="grid" fill="#000000" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><g id="squares">
                 <rect className="square" x="0" y="0" width="4" height="4"/>
