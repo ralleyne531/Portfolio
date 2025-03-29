@@ -4,6 +4,7 @@ import Hero from './Hero.js'
 import About from "./About";
 import Skills from "./Skills.js";
 import Experience from "./ExperienceComponent/Experience.js";
+import Projects from "./ProjectsComponent/Projects";
 
 // Define styles for the section
 const StyledSection = styled.div`
@@ -26,12 +27,7 @@ function PortfolioSection({ className }) {
             case 'experience':
                 return (<Experience></Experience>);
             case 'projects':
-                return (
-                    <>
-                        <h2>Projects</h2>
-                        <p>Explore the projects I have worked on.</p>
-                    </>
-                );
+                return (<Projects></Projects>);
             case 'skills':
                 return (<Skills></Skills>);
             case 'interests':
