@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "IceCreamParty";
   src:url("fonts/IceCreamPartySolid.ttf");
@@ -54,6 +60,57 @@ main::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
 }
 
+h1{
+  font-family: "Super Cottage", serif;
+  color: black;
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Super Cottage", serif;
+  color: #101010;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Super Cottage", serif;
+  color: #101010;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h4{
+  font-family: "Super Cottage", serif;
+  font-size: 2rem;
+}
+
+p{
+  font-family: "SuperCottage", serif;
+  color: #101010;
+  font-size: 14px;
+  text-transform: uppercase;
+  justify-self: center;
+}
+
+img{
+  width:50%;
+  object-fit: cover;
+}
+
+svg{
+  justify-self: center;
+  width: 50px;
+  height: 50px;
+}
+
+.skillGroups{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 footer{
   background-color:lightgray;
   grid-area: footer;
