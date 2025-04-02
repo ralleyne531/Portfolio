@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import NavigationList from "../NavigationList";
 
 const FooterSection = styled.div`
-  
+    border: 1px black solid;
     margin:0;
     padding: 0;
     
@@ -19,13 +20,7 @@ function Footer(){
                 <h4><a>Github</a></h4>
             </FooterSection>
             <FooterSection>
-                <ul>
-                    <li>About</li>
-                    <li>Experience</li>
-                    <li>Projects</li>
-                    <li>Skills</li>
-                    <li>Interests</li>
-                </ul>
+                <NavigationList></NavigationList>
             </FooterSection>
             <FooterSection>
                 Signup Form
