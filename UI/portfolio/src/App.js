@@ -1,8 +1,9 @@
+import React from 'react'
 import './App.css';
 import Sidebar from './Components/SidebarComponent/Sidebar'
 import Header from './Components/HeaderComponent/header.js'
-import React from 'react'
 import PorfolioSection from "./Components/PorfolioSection";
+import Footer from "./Components/FooterComponent/Footer";
 function App() {
   const[isSidebarHidden, setIsSidebarHidden] = React.useState(true)
   const toggleSidebar = () => {
@@ -23,9 +24,8 @@ function App() {
           <PorfolioSection className={"projects"}/>
           <PorfolioSection className={"skills"}/>
           <PorfolioSection className={"interests"}/>
-          <footer>Hello World ~footer</footer>
+          <Footer></Footer>
         </main>
-
       </div>
     </>
   );
