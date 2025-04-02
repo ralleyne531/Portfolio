@@ -111,11 +111,14 @@ svg{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-footer{
+
+.footer{
   background-color:lightgray;
   grid-area: footer;
   padding: 2em;
   border: black 1px solid;
+  display: flex;
+  justify-content: space-between;
 }
 
 aside.show {
