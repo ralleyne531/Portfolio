@@ -1,14 +1,9 @@
 import React from "react";
+import NavigationList from "../NavigationList";
 
 function Sidebar(){
     return(
-        <ul>
-            <li>About</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Interests</li>
-        </ul>
+       <NavigationList></NavigationList>
     )
 }
 
