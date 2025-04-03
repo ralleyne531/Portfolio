@@ -46,7 +46,7 @@ function Footer(){
                 <NavigationList></NavigationList>
             </FooterSection>
             <FooterSection>
-                Signup Form
+                [Coming Soon]
             </FooterSection>
         </div>
     )
