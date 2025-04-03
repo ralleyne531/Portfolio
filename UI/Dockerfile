@@ -7,7 +7,7 @@ WORKDIR /src
 COPY package.json package-lock.json ./
 RUN npm install
 
-COPY portfolio .
+COPY . .
 
 RUN npm run build
 CMD ["npm", "start"]
