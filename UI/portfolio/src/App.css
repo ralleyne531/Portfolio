@@ -28,7 +28,6 @@
 
 .header {
   position: sticky;
-  background-color: lightgray;
   grid-area: header;
   padding: 0.375em;
 }
@@ -37,7 +36,6 @@ aside{
   height: 100%;
   position: sticky;
   align-self: start;
-  background-color:lightgray;
   grid-area: sidebar;
   width: 300px;
   right: 0;
@@ -50,7 +48,6 @@ aside.show {
 }
 
 main{
-  background-color:lightgray;
   grid-area: main;
   width: 100%;
   border: black 1px solid;
@@ -131,7 +128,6 @@ svg{
 }
 
 .footer{
-  background-color: lightgray;
   grid-area: footer;
   padding: 0.375em;
   border: black 1px solid;
