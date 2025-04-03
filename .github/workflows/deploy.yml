@@ -24,14 +24,14 @@ jobs:
       # Step 3: Install dependencies and build the React app
       - name: Install dependencies and build
         run: |
-          cd ui
+          cd UI
           npm install
           npm run build
 
       # Step 4: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         run: |
-          cd ui
+          cd UI
           npm run deploy
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
