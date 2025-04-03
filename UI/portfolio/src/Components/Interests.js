@@ -21,7 +21,7 @@ const HList = styled.ul`
 function Interests() {
 
     return (
-        <div style={{padding: "2em", display:'flex', flexDirection:"column", alignItems:"center"}}>
+        <div style={{padding: "3em", display:'flex', flexDirection:"column", alignItems:"center"}}>
                 <h2>Interests</h2>
                 <p>What I enjoy away from engineering.</p>
             <HList>

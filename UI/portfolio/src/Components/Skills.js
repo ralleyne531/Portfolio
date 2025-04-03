@@ -49,7 +49,7 @@ function Skills() {
     };
 
     return (
-        <div style={{padding: "2em", display:'flex', flexDirection: "column", alignItems:"center"}}>
+        <div style={{padding: "3em", display:'flex', flexDirection: "column", alignItems:"center"}}>
             <h2>Skills</h2>
             <div className={"skillGroups"}>
             {Object.entries(Icons).map(([category, iconSet]) => (

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ProjectsCard from "./ProjectsCard";
 
 const ProjectsDiv = styled.div`
-  padding: 2em;
+  padding: 3em;
   display: flex;
   gap:20px;
   flex-wrap: wrap;

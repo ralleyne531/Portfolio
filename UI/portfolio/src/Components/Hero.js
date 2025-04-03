@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledHero = styled.div`
   border-bottom: black 1px solid;
-  padding: 2em;
+  padding: 3em;
   text-align: center;
   p{
     max-width: 50%;
