@@ -36,6 +36,7 @@ Message me here on GitHub or on any of my social links!
 
 ## Features to come
 - Test suite creation
+- Implementing reliable CI/CD pipeline
 - Improved documentation
 - Changed background image
 - Updates to component styling
