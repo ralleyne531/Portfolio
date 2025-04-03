@@ -3,27 +3,50 @@ import styled from "styled-components";
 import NavigationList from "../NavigationList";
 
 const FooterSection = styled.div`
-    border: 1px black solid;
-    margin:0;
-    padding: 0;
-    
-    `
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+`;
+
+const LeftFooterSection = styled(FooterSection)`
+    align-items: flex-start;
+    text-align: left;
+
+`;
+const HorizontalList = styled.ul`
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  
+    li{
+      list-style: none;
+    }
+  
+`
 
 function Footer(){
     return(
         <div className="footer">
-            <FooterSection>
-                <h3>Rashidi Alleyne</h3>
-                <h4><a href="mailto:ralleyne531@gmail.com">ralleyne531@gmail.com</a></h4>
-                <h4><a>LinkedIn</a></h4>
-                <h4><a>IG</a></h4>
-                <h4><a>Github</a></h4>
-            </FooterSection>
+            <LeftFooterSection>
+                <h4>Rashidi Alleyne</h4>
+                <h5><a href="mailto:ralleyne531@gmail.com">ralleyne531@gmail.com</a></h5>
+                <HorizontalList>
+                <li><h5><a>LinkedIn</a></h5></li>
+                <li><h5><a>IG</a></h5></li>
+                <li><h5><a>Github</a></h5></li>
+                </HorizontalList>
+            </LeftFooterSection>
             <FooterSection>
                 <NavigationList></NavigationList>
             </FooterSection>
             <FooterSection>
-                Signup Form
+                [Coming Soon]
             </FooterSection>
         </div>
     )
