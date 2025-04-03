@@ -25,7 +25,7 @@ const ProjectsCardDiv = styled.div`
 
 function ProjectsCard({project,creationDate,stage,iconNames}){
 
-    const importIcons = require.context("../Icons", false, /\.jsx?$/);
+    const importIcons = require.context("../../Icons", false, /\.jsx?$/);
     return(
         <>
         <ProjectsCardDiv>
