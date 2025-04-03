@@ -13,25 +13,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout the code from the repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Step 2: Set up Docker Buildx for better caching and cross-platform builds
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: Build and run Docker container
+      # Step 3: Build the Docker image
+      - name: Build Docker image
         run: |
           docker build -t portfolio -f UI/Dockerfile .
-          docker run -d -p 3000:3000 portfolio
 
-      - name: Install dependencies
-        run: npm install
+      # Step 4: Copy the built files from the container
+      - name: Extract build output from container
+        run: |
+          docker create --name extract-container portfolio
+          docker cp extract-container:/ui/build ./build
+          docker rm extract-container
 
-      - name: Build the portfolio
-        run: npm run build
-
+      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: build
+          folder: ./build
