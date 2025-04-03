@@ -15,7 +15,7 @@ jobs:
     steps:
       # Step 1: Checkout the code
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       # Step 2: Set up Node.js
       - name: Set up Node.js
@@ -26,14 +26,11 @@ jobs:
         run: |
           cd UI
           npm install
-          npm run build
 
       # Step 4: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         run: |
           cd UI
-          git config --global user.email "ralleyne531@gmail.com"
-          git config --global user.name "ralleyne531"
           npm run deploy
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
