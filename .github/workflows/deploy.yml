@@ -30,6 +30,8 @@ jobs:
 
       # Step 4: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        run: |
+          cd UI
+          npm run deploy
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
