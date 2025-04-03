@@ -26,11 +26,11 @@ jobs:
         run: |
           docker build -t portfolio -f UI/Dockerfile .
 
-      # Step 4: Copy the built files from the container
+      # Step 4: Copy the built files from the container to the host system
       - name: Extract build output from container
         run: |
           docker create --name extract-container portfolio
-          docker cp extract-container:/ui/build ./build
+          docker cp extract-container:/ui/build ./build  # Adjust path if necessary
           docker rm extract-container
 
       # Step 5: Deploy to GitHub Pages
@@ -38,5 +38,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: ui/build
+          folder: ./build  # This should be the directory on the host system now
           token: ${{ secrets.GH_TOKEN }}
