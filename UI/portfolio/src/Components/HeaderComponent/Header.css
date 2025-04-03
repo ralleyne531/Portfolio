@@ -10,12 +10,16 @@
     text-decoration: none;
 }
 
-svg {
+.header svg {
     width: 65px;
     height: 65px;
     cursor: pointer;
     justify-content: center;
     margin-left: 0;
+    flex-shrink: 0;
+    position: sticky;
+    top:10px;
+    right: 10px;
 }
 
 /* Target each square */
