@@ -116,6 +116,7 @@ a:hover{
 img{
   width:50%;
   object-fit: cover;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
 }
 
 svg{
