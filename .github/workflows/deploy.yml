@@ -21,7 +21,7 @@ jobs:
 
       - name: Build and run Docker container
         run: |
-          docker build -t portfolio .
+          docker build -t portfolio -f UI/Dockerfile .
           docker run -d -p 3000:3000 portfolio
 
       - name: Install dependencies

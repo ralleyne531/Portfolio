@@ -2,7 +2,7 @@ FROM node:lts-alpine
 
 LABEL authors="ralleyne"
 
-WORKDIR /portfolio/src
+WORKDIR /src
 
 COPY package.json package-lock.json ./
 RUN npm install
