@@ -15,7 +15,6 @@
 }
 
 .App {
-  text-align: left;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
@@ -46,18 +45,22 @@ aside{
   border: black 1px inset;
 }
 
+aside.show {
+  display: block;
+}
+
 main{
   background-color:lightgray;
   grid-area: main;
   width: 100%;
   border: black 1px solid;
   overflow-y: scroll;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 main::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
+  display: none;
 }
 
 h1{
@@ -130,7 +133,7 @@ svg{
 .footer{
   background-color: lightgray;
   grid-area: footer;
-  padding: 2em;
+  padding: 0.375em;
   border: black 1px solid;
   display: flex;
   justify-content: space-between; /* Left-align first div, center others */
@@ -142,8 +145,4 @@ svg{
 .footer > div {
   flex-grow: 1; /* Allows even spacing */
   text-align: center;
-}
-
-aside.show {
-  display: block;
 }

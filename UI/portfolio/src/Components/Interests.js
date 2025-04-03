@@ -9,6 +9,8 @@ const HList = styled.ul`
   justify-content: space-evenly;
   gap:10px;
   align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
   
   li{
     padding:1em;
@@ -19,7 +21,7 @@ const HList = styled.ul`
 function Interests() {
 
     return (
-        <>
+        <div style={{padding: "2em", display:'flex', flexDirection:"column", alignItems:"center"}}>
                 <h2>Interests</h2>
                 <p>What I enjoy away from engineering.</p>
             <HList>
@@ -31,7 +33,7 @@ function Interests() {
                 <li><h3>Cars</h3></li>
                 <li><h3>Binge Watching</h3></li>
             </HList>
-        </>
+        </div>
     );
 }
 

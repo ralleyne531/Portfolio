@@ -3,9 +3,9 @@ import styled from "styled-components";
 import ProjectsCard from "./ProjectsCard";
 
 const ProjectsDiv = styled.div`
-  
+  padding: 2em;
   display: flex;
-  gap:10px;
+  gap:20px;
   flex-wrap: wrap;
   justify-content: center;
 `;

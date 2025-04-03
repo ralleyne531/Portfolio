@@ -8,6 +8,7 @@ const AboutDiv = styled.div`
   align-items: center;
   max-width: 50vw;
   margin: 0 auto;
+  padding: 2em;
 `
 function About(){
 

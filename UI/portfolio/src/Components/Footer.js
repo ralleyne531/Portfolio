@@ -23,6 +23,8 @@ const HorizontalList = styled.ul`
     display: flex;
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
   
     li{
       list-style: none;

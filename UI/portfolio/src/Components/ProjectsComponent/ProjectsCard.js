@@ -10,6 +10,7 @@ const ProjectsCardDiv = styled.div`
   justify-content: flex-start;
   border: 1px solid black;
   align-items: center;
+  padding: 1em;
   
   svg{
     justify-self: center;

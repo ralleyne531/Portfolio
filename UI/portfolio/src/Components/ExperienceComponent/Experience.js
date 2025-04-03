@@ -3,7 +3,7 @@ import ExperienceCard from "./ExperienceCard";
 import styled from "styled-components";
 
 const ExperienceDiv = styled.div`
-  
+  padding: 2em;
   display: flex;
   flex-direction: column;
     `;

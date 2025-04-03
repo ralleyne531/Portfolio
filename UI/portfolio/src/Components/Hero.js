@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 
 const StyledHero = styled.div`
+  padding: 2em;
   text-align: center;
   p{
     max-width: 50%;
