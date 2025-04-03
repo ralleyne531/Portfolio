@@ -16,22 +16,22 @@ const StyledSection = styled.div`
   justify-content: center;
   flex-direction: column;`;
 
-function PortfolioSection({ className }) {
+function PortfolioSection({id,className }) {
     // Render different content based on the className
     const renderContent = () => {
         switch (className) {
             case 'hero':
-                return (<Hero></Hero>);
+                return (<Hero/>);
             case 'about':
-                return (<About></About>);
+                return (<About/>);
             case 'experience':
-                return (<Experience></Experience>);
+                return (<Experience/>);
             case 'projects':
-                return (<Projects></Projects>);
+                return (<Projects/>);
             case 'skills':
-                return (<Skills></Skills>);
+                return (<Skills/>);
             case 'interests':
-                return (<Interests></Interests>);
+                return (<Interests/>);
             default:
                 return (
                     <>
@@ -42,7 +42,7 @@ function PortfolioSection({ className }) {
         }
     };
 
-    return <StyledSection>{renderContent()}</StyledSection>;
+    return <StyledSection id={id}>{renderContent()}</StyledSection>;
 }
 
 export default PortfolioSection;

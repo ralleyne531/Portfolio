@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "IceCreamParty";
   src:url("fonts/IceCreamPartySolid.ttf");
@@ -140,4 +144,15 @@ svg{
 .footer > div {
   flex-grow: 1; /* Allows even spacing */
   text-align: center;
+}
+
+#top{
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  padding: 10px 15px;
+  color: #101010;
+  border-radius: 5px;
+  text-decoration: none;
 }

@@ -39,9 +39,9 @@ function Footer(){
                 <h4>Rashidi Alleyne</h4>
                 <h5><a href="mailto:ralleyne531@gmail.com">ralleyne531@gmail.com</a></h5>
                 <HorizontalList>
-                <li><h5><a>LinkedIn</a></h5></li>
-                <li><h5><a>IG</a></h5></li>
-                <li><h5><a>Github</a></h5></li>
+                <li><h5><a href={"https://www.linkedin.com/in/rashidi-alleyne-11242b222/"}>LinkedIn</a></h5></li>
+                <li><h5><a href={"https://instagram.com/rkalleyne/"}>IG</a></h5></li>
+                <li><h5><a href={"https://github.com/ralleyne531"}>Github</a></h5></li>
                 </HorizontalList>
             </LeftFooterSection>
             <FooterSection>

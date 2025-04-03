@@ -18,13 +18,20 @@ function App() {
           <Sidebar/>
         </aside>
         <main>
-          <PorfolioSection className={"hero"}/>
-          <PorfolioSection className={"about"}/>
-          <PorfolioSection className={"experience"}/>
-          <PorfolioSection className={"projects"}/>
-          <PorfolioSection className={"skills"}/>
-          <PorfolioSection className={"interests"}/>
+          <PorfolioSection id="hero" className={"hero"}/>
+          <PorfolioSection id="about" className={"about"}/>
+          <PorfolioSection id="experience" className={"experience"}/>
+          <PorfolioSection id="projects" className={"projects"}/>
+          <PorfolioSection id="skills" className={"skills"}/>
+          <PorfolioSection id="interests" className={"interests"}/>
           <Footer></Footer>
+          <a
+              href={"#hero"}
+              id="top"
+              style={{ display: "block" }}
+          >
+            🔝 Top
+          </a>
         </main>
       </div>
     </>

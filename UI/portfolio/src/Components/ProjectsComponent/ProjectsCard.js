@@ -24,7 +24,7 @@ const ProjectsCardDiv = styled.div`
   }
 `
 
-function ProjectsCard({project,creationDate,stage,iconNames}){
+function ProjectsCard({project,creationDate,stage,iconNames,projectLink}){
 
     const importIcons = require.context("../../Icons", false, /\.jsx?$/);
     return(
@@ -50,7 +50,7 @@ function ProjectsCard({project,creationDate,stage,iconNames}){
                     }
                 })}
             </div>
-            <GitHubIcon/>
+            <a href={projectLink} target="_blank" rel="noopener noreferrer"><GitHubIcon/></a>
         </ProjectsCardDiv>
     </>
     );
