@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "IceCreamParty";
+  src:url("fonts/IceCreamPartySolid.ttf");
+}
+
+@font-face {
+  font-family: "SuperCottage";
+  src: url("fonts/SuperCottage.ttf");
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:"header header"
+  "main sidebar"
+  "footer footer";
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  position: sticky;
+  grid-area: header;
+  padding: 0.375em;
+}
+
+aside{
+  height: 100%;
+  border-left: black 1px solid;
+  position: sticky;
+  align-self: start;
+  grid-area: sidebar;
+  width: 300px;
+  right: 0;
+  display: none;
+}
+
+aside.show {
+  display: block;
+}
+
+main{
+  grid-area: main;
+  width: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+h1{
+  font-family: "Super Cottage", serif;
+  color: black;
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Super Cottage", serif;
+  color: #101010;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Super Cottage", serif;
+  color: #101010;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h4{
+  font-family: "Super Cottage", serif;
+  font-size: 2rem;
+}
+
+h5{
+  font-family: "Super Cottage", serif;
+  font-size: 1.5rem;
+}
+
+p{
+  font-family: "SuperCottage", serif;
+  color: #101010;
+  font-size: 14px;
+  text-transform: uppercase;
+  justify-self: center;
+}
+
+a{
+  text-decoration: none;
+  color:#101010;
+}
+
+a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+img{
+  width:50%;
+  object-fit: cover;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+svg{
+  justify-self: center;
+  width: 50px;
+  height: 50px;
+}
+
+.skillGroups{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer{
+  grid-area: footer;
+  padding: 0.375em;
+  border-top: black 1px solid;
+  display: flex;
+  justify-content: space-between; /* Left-align first div, center others */
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.footer > div {
+  flex-grow: 1; /* Allows even spacing */
+  text-align: center;
+}
+
+#top{
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  padding: 10px 15px;
+  color: #101010;
+  border-radius: 5px;
+  text-decoration: none;
+}
