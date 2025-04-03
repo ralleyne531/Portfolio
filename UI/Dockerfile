@@ -9,7 +9,7 @@ COPY UI/package.json UI/package-lock.json ./
 RUN npm install
 
 # Copy the rest of the application files
-COPY . .
+COPY UI /ui
 
 # Build the app within the Docker container
 RUN npm run build
