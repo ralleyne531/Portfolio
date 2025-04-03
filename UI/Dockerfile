@@ -1,6 +1,6 @@
-LABEL authors="ralleyne"
-
 FROM node:lts-alpine
+
+LABEL authors="ralleyne"
 
 WORKDIR /ui
 
