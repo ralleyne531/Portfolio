@@ -87,12 +87,27 @@ h4{
   font-size: 2rem;
 }
 
+h5{
+  font-family: "Super Cottage", serif;
+  font-size: 1.5rem;
+}
+
 p{
   font-family: "SuperCottage", serif;
   color: #101010;
   font-size: 14px;
   text-transform: uppercase;
   justify-self: center;
+}
+
+a{
+  text-decoration: none;
+  color:#101010;
+}
+
+a:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 img{
@@ -113,12 +128,20 @@ svg{
 }
 
 .footer{
-  background-color:lightgray;
+  background-color: lightgray;
   grid-area: footer;
   padding: 2em;
   border: black 1px solid;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Left-align first div, center others */
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.footer > div {
+  flex-grow: 1; /* Allows even spacing */
+  text-align: center;
 }
 
 aside.show {
