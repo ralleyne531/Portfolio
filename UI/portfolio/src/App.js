@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css';
-import Sidebar from './Components/SidebarComponent/Sidebar'
-import Header from './Components/HeaderComponent/header.js'
+import Sidebar from './Components/Sidebar'
+import Header from './Components/HeaderComponent/Header.js'
 import PorfolioSection from "./Components/PorfolioSection";
-import Footer from "./Components/FooterComponent/Footer";
+import Footer from "./Components/Footer";
 function App() {
   const[isSidebarHidden, setIsSidebarHidden] = React.useState(true)
   const toggleSidebar = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import NavigationList from "../NavigationList";
+import NavigationList from "./NavigationList";
 
 function Sidebar(){
     return(

@@ -4,7 +4,7 @@ import {
     CSSIcon, DockerIcon, DotNetIcon,ExpressIcon, FigmaIcon, FlaskIcon, GitIcon,
     GitHubIcon, HTMLIcon,IllustratorIcon, JavaIcon, JSIcon, MongoIcon, NodeIcon,PhotoshopIcon, PyIcon,
     ReactIcon, SplunkIcon, SQLIcon
-} from "../../Icons";
+} from "../Icons";
 
 function Skills() {
     const Icons = {

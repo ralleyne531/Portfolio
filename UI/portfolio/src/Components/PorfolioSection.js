@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import Hero from './Hero.js'
 import About from "./About";
-import Skills from "./SkillsComponent/Skills.js";
+import Skills from "./Skills.js";
 import Experience from "./ExperienceComponent/Experience.js";
 import Projects from "./ProjectsComponent/Projects";
-import Interests from "./InterestsComponent/Interests";
+import Interests from "./Interests";
 
 // Define styles for the section
 const StyledSection = styled.div`
