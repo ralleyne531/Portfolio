@@ -1,39 +1,37 @@
-name: Deploy Portfolio to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main  # Trigger on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on push to the main branch
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
+      # Step 1: Checkout the code
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
-      # Step 2: Set up Node.js environment
+      # Step 2: Set up Node.js
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
 
-      # Step 3: Install dependencies
-      - name: Install dependencies
+      # Step 3: Install dependencies and build the React app
+      - name: Install dependencies and build
         run: |
           cd ui
           npm install
-
-      # Step 4: Build the app
-      - name: Build the app
-        run: |
-          cd ui
           npm run build
 
-      # Step 5: Deploy to GitHub Pages
+      # Step 4: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages  # Target the gh-pages branch
-          folder: ui/build  # Path to the build directory
-          token: ${{ secrets.GH_TOKEN }}  # GitHub Token for authentication
+        run: |
+          cd ui
+          npm run deploy
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
