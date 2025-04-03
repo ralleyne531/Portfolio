@@ -2,9 +2,9 @@ FROM node:lts-alpine
 
 LABEL authors="ralleyne"
 
-WORKDIR /src
+WORKDIR /ui
 
-COPY package.json package-lock.json ./
+COPY ui/package.json ui/package-lock.json ./
 RUN npm install
 
 COPY . .
