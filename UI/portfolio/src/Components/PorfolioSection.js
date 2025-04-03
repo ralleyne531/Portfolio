@@ -11,7 +11,6 @@ import Interests from "./Interests";
 const StyledSection = styled.div`
   width: 100%;
   min-height: fit-content;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
