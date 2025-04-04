@@ -3,7 +3,6 @@ import styled from "styled-components";
 import NavigationList from "./NavigationList";
 
 const FooterSection = styled.div`
-  box-sizing: content-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +15,6 @@ const FooterSection = styled.div`
 const LeftFooterSection = styled(FooterSection)`
     align-items: flex-start;
     text-align: left;
-
 `;
 const HorizontalList = styled.ul`
     justify-content: flex-start;
@@ -29,8 +27,7 @@ const HorizontalList = styled.ul`
     li{
       list-style: none;
     }
-  
-`
+`;
 
 function Footer(){
     return(
