@@ -6,7 +6,8 @@ const AboutDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 50vw;
+  max-width: 75%;
+  gap: 48px;
   margin: 0 auto;
   padding: 3em;
 `

@@ -71,7 +71,8 @@ main::-webkit-scrollbar {
 h1{
   font-family: "SuperCottage", serif;
   color: black;
-  font-size: 10rem;
+  font-size: 80px;
+  line-height: 96px;
   text-transform: uppercase;
 }
 
@@ -92,7 +93,8 @@ h3 {
 
 h4{
   font-family: "SuperCottage", serif;
-  font-size: 2rem;
+  font-size: 64px;
+  line-height: 72px;
 }
 
 h5{
@@ -103,7 +105,8 @@ h5{
 p{
   font-family: "SuperCottage", serif;
   color: #101010;
-  font-size: 14px;
+  font-size: 24px;
+  line-height: 32px;
   text-transform: uppercase;
   justify-self: center;
 }
@@ -121,7 +124,11 @@ a:hover{
 img{
   width:50%;
   object-fit: cover;
-  mask-image: linear-gradient(rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+
+  /* Circular mask */
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
+
 }
 
 svg{
