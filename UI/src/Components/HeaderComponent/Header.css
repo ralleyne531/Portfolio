@@ -34,3 +34,43 @@
 .merged .square:nth-child(7) { transform: translate(6px, -2px) scale(0.7); }
 .merged .square:nth-child(8) { transform: translate(3px, -2px) scale(0.7); }
 .merged .square:nth-child(9) { transform: translate(-2px, -2px) scale(0.7); }
+
+@media only screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap; /* Optional: wrap content if needed */
+        padding: 0.375em;
+        gap: 1em;
+    }
+
+    .header h5 {
+        white-space: nowrap;
+    }
+    .header svg {
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        justify-content: center;
+        margin-left: 0;
+        flex-shrink: 0;
+        position: sticky;
+        top:10px;
+        right: 10px;
+    }
+
+ .header > a > button{
+     width: 80px;
+     height: 25px;
+     border-radius: 17px;
+     font-size: 0.5rem;
+     font-weight: bold;
+     border: none;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: background 0.3s, color 0.3s;
+    }
+}
