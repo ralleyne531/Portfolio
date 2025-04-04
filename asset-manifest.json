@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.9ca8619a.css",
-    "main.js": "/Portfolio/static/js/main.e433bac3.js",
+    "main.css": "/Portfolio/static/css/main.fc25678c.css",
+    "main.js": "/Portfolio/static/js/main.af9d4acf.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/SuperCottage.otf": "/Portfolio/static/media/SuperCottage.d03a501e1a5aeaaef8c5.otf",
     "static/media/SuperCottage.ttf": "/Portfolio/static/media/SuperCottage.1324fa06c2af7f5fb19c.ttf",
@@ -10,12 +10,12 @@
     "static/media/SuperCottage.woff2": "/Portfolio/static/media/SuperCottage.dab554dfcf33b0a7b6e1.woff2",
     "static/media/IceCreamPartySolid.ttf": "/Portfolio/static/media/IceCreamPartySolid.38dc69535fb7cc3feeea.ttf",
     "index.html": "/Portfolio/index.html",
-    "main.9ca8619a.css.map": "/Portfolio/static/css/main.9ca8619a.css.map",
-    "main.e433bac3.js.map": "/Portfolio/static/js/main.e433bac3.js.map",
+    "main.fc25678c.css.map": "/Portfolio/static/css/main.fc25678c.css.map",
+    "main.af9d4acf.js.map": "/Portfolio/static/js/main.af9d4acf.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ca8619a.css",
-    "static/js/main.e433bac3.js"
+    "static/css/main.fc25678c.css",
+    "static/js/main.af9d4acf.js"
   ]
 }
