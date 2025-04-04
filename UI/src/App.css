@@ -130,7 +130,8 @@ img{
   /* Circular mask */
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
   -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
-
+  -webkit-mask-composite: destination-in; /* Ensures proper mask rendering in Safari */
+  mask-composite: intersect;
 }
 
 svg{
