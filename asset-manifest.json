@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.35bd517a.css",
-    "main.js": "/Portfolio/static/js/main.6f2d8b6d.js",
+    "main.css": "/Portfolio/static/css/main.9d049c40.css",
+    "main.js": "/Portfolio/static/js/main.f18d1e20.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/SuperCottage.otf": "/Portfolio/static/media/SuperCottage.d03a501e1a5aeaaef8c5.otf",
     "static/media/SuperCottage.ttf": "/Portfolio/static/media/SuperCottage.1324fa06c2af7f5fb19c.ttf",
     "static/media/Headshot_2025.png": "/Portfolio/static/media/Headshot_2025.18d0d3fda52e804f350c.png",
+    "static/media/SuperCottage.woff": "/Portfolio/static/media/SuperCottage.6479af932ae2e852f616.woff",
+    "static/media/SuperCottage.woff2": "/Portfolio/static/media/SuperCottage.dab554dfcf33b0a7b6e1.woff2",
     "static/media/IceCreamPartySolid.ttf": "/Portfolio/static/media/IceCreamPartySolid.38dc69535fb7cc3feeea.ttf",
     "index.html": "/Portfolio/index.html",
-    "main.35bd517a.css.map": "/Portfolio/static/css/main.35bd517a.css.map",
-    "main.6f2d8b6d.js.map": "/Portfolio/static/js/main.6f2d8b6d.js.map",
+    "main.9d049c40.css.map": "/Portfolio/static/css/main.9d049c40.css.map",
+    "main.f18d1e20.js.map": "/Portfolio/static/js/main.f18d1e20.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35bd517a.css",
-    "static/js/main.6f2d8b6d.js"
+    "static/css/main.9d049c40.css",
+    "static/js/main.f18d1e20.js"
   ]
 }
