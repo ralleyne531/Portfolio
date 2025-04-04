@@ -16,11 +16,11 @@ const NavListContainer = styled.ul`
 function NavigationList(){
     return(
         <NavListContainer>
-            <li><h4><a href={"#about"}>About</a></h4></li>
-            <li><h4><a href={"#experience"}>Experience</a></h4></li>
-            <li><h4><a href={"#projects"}>Projects</a></h4></li>
-            <li><h4><a href={"#skills"}>Skills</a></h4></li>
-            <li><h4><a href={"#interests"}>Interests</a></h4></li>
+            <li><h5><a href={"#about"}>About</a></h5></li>
+            <li><h5><a href={"#experience"}>Experience</a></h5></li>
+            <li><h5><a href={"#projects"}>Projects</a></h5></li>
+            <li><h5><a href={"#skills"}>Skills</a></h5></li>
+            <li><h5><a href={"#interests"}>Interests</a></h5></li>
         </NavListContainer>
     )
 }

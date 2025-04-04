@@ -10,8 +10,8 @@ const ExperienceCardDiv = styled.div`
 function ExperienceCard({jobTitle, company, tenure}) {
     return (
         <ExperienceCardDiv>
-            <h3>{jobTitle}</h3>
-            <h4>{company}</h4>
+            <h4>{jobTitle}</h4>
+            <h5>{company}</h5>
             <p>{tenure}</p>
         </ExperienceCardDiv>
     );

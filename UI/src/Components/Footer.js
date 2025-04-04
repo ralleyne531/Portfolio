@@ -36,7 +36,7 @@ function Footer(){
     return(
         <div className="footer">
             <LeftFooterSection>
-                <h4>Rashidi Alleyne</h4>
+                <h5>Rashidi Alleyne</h5>
                 <h5><a href="mailto:ralleyne531@gmail.com">ralleyne531@gmail.com</a></h5>
                 <HorizontalList>
                 <li><h5><a href={"https://www.linkedin.com/in/rashidi-alleyne-11242b222/"}>LinkedIn</a></h5></li>

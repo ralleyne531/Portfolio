@@ -8,12 +8,6 @@ import {
 
 function Skills() {
     const Icons = {
-        "Front-End Development": {
-            HTML: HTMLIcon,
-            CSS: CSSIcon,
-            React: ReactIcon,
-            Figma: FigmaIcon,
-        },
         "Languages": {
             CSharp: CsharpIcon,
             CPlusPlus: CPlusPlusIcon,
@@ -21,6 +15,12 @@ function Skills() {
             JavaScript: JSIcon,
             Python: PyIcon,
             SQL: SQLIcon,
+        },
+        "Front-End Development": {
+            HTML: HTMLIcon,
+            CSS: CSSIcon,
+            React: ReactIcon,
+            Figma: FigmaIcon,
         },
         "Back-End Development": {
             NodeJs: NodeIcon,
@@ -49,17 +49,17 @@ function Skills() {
     };
 
     return (
-        <div style={{padding: "3em", display:'flex', flexDirection: "column", alignItems:"center"}}>
+        <div style={{padding: "3em", display:'flex', flexDirection: "column", alignItems:"center",}}>
             <h2>Skills</h2>
             <div className={"skillGroups"}>
             {Object.entries(Icons).map(([category, iconSet]) => (
                 <div key={category} style={{ marginBottom: '20px', textAlign: 'center' }}>
-                    <h4>{category}</h4>
+                    <h5>{category}</h5>
                     <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
                         {Object.entries(iconSet).map(([name, Icon]) => (
                             <div key={name} style={{ textAlign: 'center', margin: '10px' }}>
                                 <Icon width={50} height={50} />
-                                <p style={{ fontSize: '12px' }}>{name}</p>
+                                <p>{name}</p>
                             </div>
                         ))}
                     </div>

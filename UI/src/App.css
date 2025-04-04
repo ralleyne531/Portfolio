@@ -101,7 +101,9 @@ h4{
 
 h5{
   font-family: "SuperCottage", serif;
-  font-size: 1.5rem;
+  font-size: 32px;
+  line-height: 48px;
+  text-wrap: none;
 }
 
 p{
@@ -143,7 +145,7 @@ svg{
 .skillGroups{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .footer{

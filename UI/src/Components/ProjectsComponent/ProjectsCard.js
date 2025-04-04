@@ -30,8 +30,8 @@ function ProjectsCard({project,creationDate,stage,iconNames,projectLink}){
     return(
         <>
         <ProjectsCardDiv>
-            <h3>{project}</h3>
-            <h4>Hello World: {creationDate}</h4>
+            <h4>{project}</h4>
+            <h5>Hello World: {creationDate}</h5>
             <p>Stage: {stage}</p>
             {/* Render icons dynamically */}
             <div style={{ display: 'flex', }}>
