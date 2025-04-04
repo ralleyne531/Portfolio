@@ -5,6 +5,18 @@
   background-color: #EEEEEE;
 }
 
+@font-face {
+  font-family: "SuperCottage";
+  src: url('fonts/SuperCottage.woff2') format('woff2'), url('fonts/SuperCottage.woff') format('woff'),
+  url("fonts/SuperCottage.ttf") format("truetype"),
+  url('fonts/SuperCottage.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 :root {
   --ff: "SuperCottage", serif;
 
@@ -28,15 +40,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: "SuperCottage";
-  src: url('fonts/SuperCottage.woff2') format('woff2'), url('fonts/SuperCottage.woff') format('woff'),
-  url("fonts/SuperCottage.ttf") format("truetype"),
-  url('fonts/SuperCottage.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 .App {
   display: grid;
