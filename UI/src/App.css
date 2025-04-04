@@ -29,11 +29,6 @@ html {
 }
 
 @font-face {
-  font-family: "IceCreamParty";
-  src:url("fonts/IceCreamPartySolid.ttf");
-}
-
-@font-face {
   font-family: "SuperCottage";
   src: url('fonts/SuperCottage.woff2') format('woff2'), url('fonts/SuperCottage.woff') format('woff'),
   url("fonts/SuperCottage.ttf") format("truetype"),
