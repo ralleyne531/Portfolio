@@ -57,13 +57,14 @@ html {
 
 .header {
   position: sticky;
+  z-index: 10;
   grid-area: header;
   padding: 0.375em;
+  filter: drop-shadow(0 5px 4px rgba(0,0,0,0.5));
 }
 
 aside{
   height: 100%;
-  border-left: black 1px solid;
   position: sticky;
   align-self: start;
   grid-area: sidebar;
@@ -74,6 +75,7 @@ aside{
 
 aside.show {
   display: block;
+  filter: drop-shadow(-4px 5px 4px rgba(0,0,0,0.5));
 }
 
 main{
@@ -165,12 +167,12 @@ svg{
 .footer{
   grid-area: footer;
   padding: 0.375em;
-  border-top: black 1px solid;
   display: flex;
   justify-content: space-between; /* Left-align first div, center others */
   align-items: center;
   text-align: center;
   gap: 50px;
+  filter: drop-shadow(0 -5px 4px rgba(0,0,0,0.5));
 }
 
 .footer > div {

@@ -14,7 +14,10 @@ const StyledSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;`;
+  flex-direction: column;
+  filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.5));
+`;
+
 
 function PortfolioSection({id,className }) {
     // Render different content based on the className
