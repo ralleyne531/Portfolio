@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+:root {
+  --ff: "SuperCottage", serif;
+
+  --h1: 600 80px/96px var(--ff);
+  --h2: 600 77px/84px var(--ff);
+  --h3: 600 70px/77px var(--ff);
+  --h4: 600 64px/72px var(--ff);
+  --h5: 600 32px/48px var(--ff);
+  --p: 400 24px/32px var(--ff);
+
+  --spacing1: 4px;
+  --spacing2: 8px;
+  --spacing3: 16px;
+  --spacing4: 20px;
+  --spacing5: 40px;
+  --spacing6: 80px;
+  --spacing7: 160px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -69,50 +88,37 @@ main::-webkit-scrollbar {
 }
 
 h1{
-  font-family: "SuperCottage", serif;
-  color: black;
-  font-size: 80px;
-  line-height: 96px;
+  font: var(--h1);
   text-transform: uppercase;
+  color: #101010;
 }
 
 h2 {
-  font-family: "SuperCottage", serif;
-  color: #101010;
-  font-size: 77px;
-  line-height: 84px;
+  font: var(--h2);
   text-transform: uppercase;
+  color: #101010;
 }
 
 h3 {
-  font-family: "SuperCottage", serif;
-  color: #101010;
-  font-size: 70px;
-  line-height: 77px;
+  font: var(--h3);
   text-transform: uppercase;
-  margin: 0;
+  color: #101010;
 }
 
 h4{
-  font-family: "SuperCottage", serif;
-  font-size: 64px;
-  line-height: 72px;
+  font: var(--h4);
 }
 
 h5{
-  font-family: "SuperCottage", serif;
-  font-size: 32px;
-  line-height: 48px;
+  font: var(--h5);
   text-wrap: none;
 }
 
 p{
-  font-family: "SuperCottage", serif;
-  color: #101010;
-  font-size: 24px;
-  line-height: 32px;
+  font: var(--p);
   text-transform: uppercase;
   justify-self: center;
+  color: #101010;
 }
 
 a{
