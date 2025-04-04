@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #EEEEEE;
 }
 
 :root {
@@ -129,6 +130,11 @@ a{
 a:hover{
   text-decoration: underline;
   cursor: pointer;
+}
+
+a:hover p{
+  color: #EEEEEE;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 img{

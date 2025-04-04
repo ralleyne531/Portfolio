@@ -50,7 +50,7 @@ function ProjectsCard({project,creationDate,stage,iconNames,projectLink}){
                     }
                 })}
             </div>
-            <a href={projectLink} target="_blank" rel="noopener noreferrer"><GitHubIcon/></a>
+            <a href={projectLink} target="_blank" rel="noopener noreferrer" style={{display:'flex', alignItems:'center'}}><GitHubIcon/><p>REPO</p></a>
         </ProjectsCardDiv>
     </>
     );
