@@ -79,14 +79,16 @@ h1{
 h2 {
   font-family: "SuperCottage", serif;
   color: #101010;
-  font-size: 5rem;
+  font-size: 77px;
+  line-height: 84px;
   text-transform: uppercase;
 }
 
 h3 {
   font-family: "SuperCottage", serif;
   color: #101010;
-  font-size: 2.5rem;
+  font-size: 70px;
+  line-height: 77px;
   text-transform: uppercase;
   margin: 0;
 }
