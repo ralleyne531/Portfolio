@@ -151,7 +151,9 @@ svg{
 .skillGroups{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center; /* Change from space-evenly to center */
+  gap: 20px; /* Add spacing between skill groups */
+  max-width: 80%; /* Ensures it doesn't stretch too far */
 }
 
 .footer{

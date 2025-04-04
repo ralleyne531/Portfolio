@@ -53,7 +53,7 @@ function Skills() {
             <h2>Skills</h2>
             <div className={"skillGroups"}>
             {Object.entries(Icons).map(([category, iconSet]) => (
-                <div key={category} style={{ marginBottom: '20px', textAlign: 'center' }}>
+                <div key={category} style={{ flex:"1 1 33%", maxWidth:"750px",marginBottom: '20px', textAlign: 'center' }}>
                     <h5>{category}</h5>
                     <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
                         {Object.entries(iconSet).map(([name, Icon]) => (
