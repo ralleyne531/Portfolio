@@ -24,15 +24,9 @@ function App() {
           <PorfolioSection id="projects" className={"projects"}/>
           <PorfolioSection id="skills" className={"skills"}/>
           <PorfolioSection id="interests" className={"interests"}/>
-          <Footer></Footer>
-          <a
-              href={"#hero"}
-              id="top"
-              style={{ display: "block" }}
-          >
-            🔝 Top
-          </a>
         </main>
+        <Footer></Footer>
+        <a href={"#hero"} id="top"> 🔝 Top </a>
       </div>
     </>
   );
