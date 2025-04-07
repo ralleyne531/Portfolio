@@ -3,10 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch
+      - "*"  # Trigger on push to the main branch
   pull_request:
     branches:
-      - main  # Trigger on push to the main branch
+      - "*"  # Trigger on push to the main branch
 
 jobs:
   build:
@@ -39,6 +39,10 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           cd UI
-          npm run deploy
+          if [ "${GITHUB_REF}" == 'refs/heads/main' ]; then
+            npm run deploy
+          else
+            npm run deploy:test
+          fi
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
