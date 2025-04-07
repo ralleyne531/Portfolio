@@ -39,10 +39,6 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           cd UI
-          if [ "${GITHUB_REF}" == 'refs/heads/main' ]; then
             npm run deploy
-          else
-            npm run deploy:test
-          fi
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
