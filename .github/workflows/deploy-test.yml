@@ -1,44 +1,39 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (Test)
 
 on:
   push:
-    branches:
-      - main  # Trigger on push to the main branch
+    branches-ignore:
+      - main
   pull_request:
-    branches:
-      - main  # Trigger on push to the main branch
+    branches-ignore:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the code
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # Step 2: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v2
 
-      # Step 3: Set Git config (set user email and name)
       - name: Set Git identity
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-      # Step 4: Install dependencies and build the React app
       - name: Install dependencies and build
         run: |
           cd UI
           npm install
 
-      # Step 5: Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages (Test)
         run: |
           cd UI
-          npm run deploy
+          npm run deploy:test
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}

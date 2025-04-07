@@ -20,8 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build -r https://$GH_TOKEN@github.com/ralleyne531/Portfolio.git",
-    "predeploy": "npm run build"
+    "deploy:test": "gh-pages -d build -b gh-pages-test -r https://$GH_TOKEN@github.com/ralleyne531/Portfolio.git"
   },
   "eslintConfig": {
     "extends": [
