@@ -40,8 +40,10 @@ jobs:
         run: |
           cd UI
           if [ "${GITHUB_REF}" == 'refs/heads/main' ]; then
+            echo "REACT_APP_HOMEPAGE=https://ralleyne531.github.io/Portfolio/" >> $GITHUB_ENV
             npm run deploy
           else
+            echo "REACT_APP_HOMEPAGE=https://ralleyne531.github.io/Portfolio/test/" >> $GITHUB_ENV
             npm run deploy:test
           fi
         env:
