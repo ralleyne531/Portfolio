@@ -2,14 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #EEEEEE;
+  color: #EEEEEE;
+  background-color: #101010;
 }
 
 @font-face {
-  font-family: "SuperCottage";
-  src: url('fonts/SuperCottage.woff2') format('woff2'), url('fonts/SuperCottage.woff') format('woff'),
-  url("fonts/SuperCottage.ttf") format("truetype"),
-  url('fonts/SuperCottage.otf') format('opentype');
+  font-family: "PramukhRounded";
+  src: url('fonts/PramukhRounded.woff2') format('woff2'), url('fonts/PramukhRounded.woff') format('woff'),
+  url("fonts/PramukhRounded.ttf") format("truetype"),
+  url('fonts/PramukhRounded.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,14 +19,14 @@
 
 
 :root {
-  --ff: "SuperCottage", serif;
+  --ff: "PramukhRounded", serif;
 
-  --h1: 600 80px/96px var(--ff);
-  --h2: 600 77px/84px var(--ff);
-  --h3: 600 70px/77px var(--ff);
-  --h4: 600 64px/72px var(--ff);
-  --h5: 600 32px/48px var(--ff);
-  --p: 400 24px/32px var(--ff);
+  --h1: 600 106px/116px var(--ff);
+  --h2: 600 102px/112px var(--ff);
+  --h3: 600 94px/104px var(--ff);
+  --h4: 600 86px/94px var(--ff);
+  --h5: 600 48px/64px var(--ff);
+  --p: 400 36px/48px var(--ff);
 
   --spacing1: 4px;
   --spacing2: 8px;
@@ -55,17 +56,7 @@ html::-webkit-scrollbar {
   "main sidebar"
   "footer footer";
   min-height: 100vh;
-  /*overflow: hidden;*/
 }
-
-/*.header {*/
-/*  position: sticky;*/
-/*  z-index: 10;*/
-/*  grid-area: header;*/
-/*  padding: 0.375em;*/
-/*  filter: drop-shadow(0 5px 4px rgba(0,0,0,0.5));*/
-/*}*/
-
 
 .header {
   position: sticky;
@@ -73,7 +64,7 @@ html::-webkit-scrollbar {
   z-index: 10;
   grid-area: header;
   padding: 0.375em;
-  filter: drop-shadow(0 5px 4px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 5px 4px rgba(255,255,255,0.2));
 }
 
 aside{
@@ -89,31 +80,26 @@ aside{
 
 aside.show {
   display: block;
-  filter: drop-shadow(-4px 5px 4px rgba(0,0,0,0.5));
+  filter: drop-shadow(-4px 5px 4px rgba(255,255,255,0.2));
 }
 
 main{
   grid-area: main;
   width: 100%;
-
 }
 
 h1{
   font: var(--h1);
   text-transform: uppercase;
-  color: #101010;
 }
 
 h2 {
   font: var(--h2);
   text-transform: uppercase;
-  color: #101010;
 }
 
 h3 {
   font: var(--h3);
-  text-transform: uppercase;
-  color: #101010;
 }
 
 h4{
@@ -123,18 +109,16 @@ h4{
 h5{
   font: var(--h5);
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 p{
   font: var(--p);
-  text-transform: uppercase;
   justify-self: center;
-  color: #101010;
 }
 
 a{
   text-decoration: none;
-  color:#101010;
 }
 
 a:hover{
@@ -143,8 +127,8 @@ a:hover{
 }
 
 a:hover p{
-  color: #EEEEEE;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #101010;
+  text-shadow: -1px -1px 0 #EEEEEE, 1px -1px 0 #EEEEEE, -1px 1px 0 #EEEEEE, 1px 1px 0 #EEEEEE;
 }
 
 img{
@@ -180,7 +164,7 @@ svg{
   align-items: center;
   text-align: center;
   gap: 50px;
-  filter: drop-shadow(0 -5px 4px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 -5px 4px rgba(255,255,255,0.2));
 }
 
 .footer > div {
@@ -194,7 +178,6 @@ svg{
   bottom: 0;
   right: 0;
   padding: 10px 15px;
-  color: #101010;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -203,7 +186,7 @@ svg{
 @media only screen and (max-width: 600px) {
 
   :root {
-    --ff: "SuperCottage", serif;
+    --ff: "PramukhRounded", serif;
 
     --h1: 600 32px/48px var(--ff);
     --h2: 600 24px/32px var(--ff);
