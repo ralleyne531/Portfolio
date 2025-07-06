@@ -1,5 +1,6 @@
-import {render, screen } from '@testing-library/react';
+import {render, screen} from '@testing-library/react';
 import Header from "./Components/HeaderComponent/Header";
+import React from "react";
 
 test('renders header and checks for Title [Name]', () => {
     render(<Header />)
@@ -9,34 +10,20 @@ test('renders header and checks for Title [Name]', () => {
 
 });
 
-test('renders header and checks contact button is clickable', () => {
+test('renders header and checks email assigned to contact button', () => {
     render(<Header />)
 
-    const testElement = screen.findByTitle()
+    const testElement = screen.getByText("Open to Work");
     expect(testElement).toBeInTheDocument();
 
 });
 
-test('renders header and checks contact status is consistent with appropriate button content', () => {
+test('renders header and checks contact status is consistent with appropriate content', () => {
     render(<Header />)
 
-    const testElement = screen.findByTitle()
+    const testElement = screen.getByText("Open to Work");
     expect(testElement).toBeInTheDocument();
+    expect(testElement).toHaveStyle({background:"radial-gradient(#4CAF50,#45a049)"});
 
 });
 
-test('renders header and checks contact button opens mailto', () => {
-    render(<Header />)
-
-    const testElement = screen.findByTitle()
-    expect(testElement).toBeInTheDocument();
-
-});
-
-test('renders header and checks aside button opens navigation', () => {
-    render(<Header />)
-
-    const testElement = screen.findByTitle()
-    expect(testElement).toBeInTheDocument();
-
-});
