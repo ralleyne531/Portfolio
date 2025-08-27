@@ -3,16 +3,18 @@ import Header from "../../Components/HeaderComponent/Header";
 import React from "react";
 
 describe("<Header />", () => {
-    it("renders the title and contact status without crashing ", () => {})
+    it("renders the title and contact status without crashing ", () => {
+        render(<Header />);
+    })
 
     test('renders header and title: [Name]', () => {
         render(<Header />)
 
-        const testElement = screen.getByRole('heading', {
+        const title = screen.getByRole('heading', {
             name: /Rashidi Alleyne/i
         });
 
-        expect(testElement).toBeInTheDocument();
+        expect(title).toBeInTheDocument();
 
     });
 
@@ -20,11 +22,11 @@ describe("<Header />", () => {
     test('renders header and loads \'open\' contact status with appropriate content', () => {
         render(<Header />)
 
-        const testElement = screen.getByRole('button');
+        const button = screen.getByRole('button');
 
-        expect(testElement).toBeInTheDocument();
-        expect(testElement).toHaveAttribute("open");
-        expect(testElement).toHaveTextContent(/Open to Work/i);
+        expect(button).toBeInTheDocument();
+        expect(button).toHaveAttribute("open");
+        expect(button).toHaveTextContent(/Open to Work/i);
 
     });
 
