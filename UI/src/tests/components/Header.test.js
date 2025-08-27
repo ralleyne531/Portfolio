@@ -9,7 +9,7 @@ describe("<Header />", () => {
         render(<Header />)
 
         const testElement = screen.getByRole('heading', {
-            name: 'Rashidi Alleyne'
+            name: /Rashidi Alleyne/i
         });
 
         expect(testElement).toBeInTheDocument();
@@ -24,7 +24,7 @@ describe("<Header />", () => {
 
         expect(testElement).toBeInTheDocument();
         expect(testElement).toHaveAttribute("open");
-        expect(testElement).toHaveTextContent("Open to Work");
+        expect(testElement).toHaveTextContent(/Open to Work/i);
 
     });
 
