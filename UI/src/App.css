@@ -16,7 +16,12 @@
   font-display: swap;
 }
 
-
+@keyframes fade {
+  0% {opacity: 1;}
+  49% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 0;}
+}
 
 :root {
   --ff: "PramukhRounded", serif;
@@ -88,6 +93,13 @@ main{
   width: 100%;
 }
 
+section{
+  display: inline-block;
+  position: relative;
+  max-width:100%;
+}
+
+
 h1{
   font: var(--h1);
   text-transform: uppercase;
@@ -131,9 +143,11 @@ a:hover p{
   text-shadow: -1px -1px 0 #EEEEEE, 1px -1px 0 #EEEEEE, -1px 1px 0 #EEEEEE, 1px 1px 0 #EEEEEE;
 }
 
-img{
-  width:50%;
+section img{
+  display: inline-block;
   object-fit: cover;
+  width: 450px;
+  animation: fade 1s infinite alternate;
 
   /* Circular mask */
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 90%);
@@ -182,6 +196,20 @@ svg{
   text-decoration: none;
 }
 
+section img.bottom{
+  position: relative;
+  animation: fade 2s infinite alternate;
+  animation-delay: 2s;
+  z-index: 1;
+}
+
+section img.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fade 2s infinite alternate;
+  z-index: 2;
+}
 
 @media only screen and (max-width: 600px) {
 
