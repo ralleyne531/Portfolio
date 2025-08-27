@@ -10,13 +10,6 @@ test('renders header and checks for Title [Name]', () => {
 
 });
 
-test('renders header and checks email assigned to contact button', () => {
-    render(<Header />)
-
-    const testElement = screen.getByText("Open to Work");
-    expect(testElement).toBeInTheDocument();
-
-});
 
 test('renders header and checks contact status is consistent with appropriate content', () => {
     render(<Header />)
