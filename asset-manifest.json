@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2218944b.css",
-    "main.js": "/Portfolio/static/js/main.163a7305.js",
-    "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/Headshot_2025.png": "/Portfolio/static/media/Headshot_2025.18d0d3fda52e804f350c.png",
-    "static/media/Headshot_2022.jpeg": "/Portfolio/static/media/Headshot_2022.6bd927facaaae437b182.jpeg",
-    "static/media/PramukhRounded.ttf": "/Portfolio/static/media/PramukhRounded.103ee130998f81893343.ttf",
-    "static/media/PramukhRounded.otf": "/Portfolio/static/media/PramukhRounded.9b7a6f2c386d86f716e0.otf",
-    "static/media/PramukhRounded.woff": "/Portfolio/static/media/PramukhRounded.15ee288fc3a8e48761dd.woff",
-    "static/media/PramukhRounded.woff2": "/Portfolio/static/media/PramukhRounded.494b2f7cfb6bda91c785.woff2",
-    "index.html": "/Portfolio/index.html",
-    "main.2218944b.css.map": "/Portfolio/static/css/main.2218944b.css.map",
-    "main.163a7305.js.map": "/Portfolio/static/js/main.163a7305.js.map",
-    "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/$%7BREACT_APP_HOMEPAGE%7D/static/css/main.1af48160.css",
+    "main.js": "/$%7BREACT_APP_HOMEPAGE%7D/static/js/main.2fadda74.js",
+    "static/js/453.1407b060.chunk.js": "/$%7BREACT_APP_HOMEPAGE%7D/static/js/453.1407b060.chunk.js",
+    "static/media/Headshot_2025.png": "/$%7BREACT_APP_HOMEPAGE%7D/static/media/Headshot_2025.18d0d3fda52e804f350c.png",
+    "static/media/Headshot_2022.jpeg": "/$%7BREACT_APP_HOMEPAGE%7D/static/media/Headshot_2022.6bd927facaaae437b182.jpeg",
+    "static/media/PramukhRounded.ttf": "/$%7BREACT_APP_HOMEPAGE%7D/static/media/PramukhRounded.103ee130998f81893343.ttf",
+    "static/media/PramukhRounded.otf": "/$%7BREACT_APP_HOMEPAGE%7D/static/media/PramukhRounded.9b7a6f2c386d86f716e0.otf",
+    "static/media/PramukhRounded.woff": "/$%7BREACT_APP_HOMEPAGE%7D/static/media/PramukhRounded.15ee288fc3a8e48761dd.woff",
+    "static/media/PramukhRounded.woff2": "/$%7BREACT_APP_HOMEPAGE%7D/static/media/PramukhRounded.494b2f7cfb6bda91c785.woff2",
+    "index.html": "/$%7BREACT_APP_HOMEPAGE%7D/index.html",
+    "main.1af48160.css.map": "/$%7BREACT_APP_HOMEPAGE%7D/static/css/main.1af48160.css.map",
+    "main.2fadda74.js.map": "/$%7BREACT_APP_HOMEPAGE%7D/static/js/main.2fadda74.js.map",
+    "453.1407b060.chunk.js.map": "/$%7BREACT_APP_HOMEPAGE%7D/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2218944b.css",
-    "static/js/main.163a7305.js"
+    "static/css/main.1af48160.css",
+    "static/js/main.2fadda74.js"
   ]
 }
