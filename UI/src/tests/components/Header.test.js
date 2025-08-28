@@ -10,11 +10,11 @@ describe("<Header />", () => {
     test('renders header and title: [Name]', () => {
         render(<Header />)
 
-        const title = screen.getByRole('heading', {
+        const testElement = screen.getByRole('heading', {
             name: /Rashidi Alleyne/i
         });
 
-        expect(title).toBeInTheDocument();
+        expect(testElement).toBeInTheDocument();
 
     });
 
@@ -22,11 +22,11 @@ describe("<Header />", () => {
     test('renders header and loads \'open\' contact status with appropriate content', () => {
         render(<Header />)
 
-        const button = screen.getByRole('button');
+        const testElement = screen.getByRole('button');
 
-        expect(button).toBeInTheDocument();
-        expect(button).toHaveAttribute("open");
-        expect(button).toHaveTextContent(/Open to Work/i);
+        expect(testElement).toBeInTheDocument();
+        expect(testElement).toHaveAttribute("open");
+        expect(testElement).toHaveTextContent(/Open to Work/i);
 
     });
 

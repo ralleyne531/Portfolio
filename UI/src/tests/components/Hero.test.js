@@ -10,11 +10,14 @@ describe("<Hero />", () => {
     test("renders the title, role, and bio status with appropriate content", () => {
         render(<Hero />);
 
-        const title = screen.getByRole('heading', {level : 1})
-        expect(title).toBeInTheDocument();
+        let testElement = screen.getByRole('heading', {level : 1})
+        expect(testElement).toBeInTheDocument();
 
-        const role = screen.getByRole('heading', {level : 5})
-        expect(title).toBeInTheDocument();
+        testElement = screen.getByRole('heading', {level : 5})
+        expect(testElement).toBeInTheDocument();
+
+        testElement = screen.getByRole('paragraph')
+        expect(testElement).toBeInTheDocument();
 
     })
 })
