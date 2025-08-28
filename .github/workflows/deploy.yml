@@ -33,10 +33,10 @@ jobs:
           npm install
 
       # Step 5: Run tests
-      - name: Run tests
-        run: |
-          cd UI
-          npm install
+#      - name: Run tests
+#        run: |
+#          cd UI
+#          npm install
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
