@@ -7,10 +7,14 @@ const AboutDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 75%;
+  max-width: 100%;
   gap: 96px;
   margin: 0 auto;
   padding: 3em;
+    
+    p{
+        max-width: 350px;
+    }
 `
 function About(){
 
