@@ -26,12 +26,12 @@
 :root {
   --ff: "PramukhRounded", serif;
 
-  --h1: 600 106px/116px var(--ff);
-  --h2: 600 102px/112px var(--ff);
-  --h3: 600 94px/104px var(--ff);
-  --h4: 600 86px/94px var(--ff);
-  --h5: 600 48px/64px var(--ff);
-  --p: 400 36px/48px var(--ff);
+  --h1: 600 80px/96px var(--ff);
+  --h2: 600 64px/72px var(--ff);
+  --h3: 600 48px/56px var(--ff);
+  --h4: 600 36px/40px var(--ff);
+  --h5: 600 28px/32px var(--ff);
+  --p: 400 18px/28px var(--ff);
 
   --spacing1: 4px;
   --spacing2: 8px;
@@ -146,7 +146,8 @@ a:hover p{
 section img{
   display: inline-block;
   object-fit: cover;
-  width: 450px;
+  width: 100%;
+  max-width: 300px;
   animation: fade 1s infinite alternate;
 
   /* Circular mask */
