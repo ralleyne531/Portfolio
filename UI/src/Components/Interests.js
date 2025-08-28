@@ -14,7 +14,7 @@ const HList = styled.ul`
   
   li{
     padding:1em;
-    border: 1px solid black;
+    border: 1px solid #EEEEEE;
     border-radius: 16px;
   }
 `
@@ -23,7 +23,7 @@ function Interests() {
     return (
         <div style={{padding: "3em", display:'flex', flexDirection:"column", alignItems:"center"}}>
                 <h2>Interests</h2>
-                <h5>What I enjoy away from engineering.</h5>
+                <p>What I enjoy away from engineering.</p>
             <HList>
                 <li><h4>Gaming</h4></li>
                 <li><h4>Music</h4></li>

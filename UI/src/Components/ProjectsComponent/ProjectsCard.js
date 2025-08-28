@@ -8,7 +8,7 @@ const ProjectsCardDiv = styled.div`
   flex-direction: column;
   flex: 0 fit-content;
   justify-content: flex-start;
-  border: 1px solid black;
+  border: 1px solid white;
   align-items: center;
   padding: 1em;
   
@@ -22,7 +22,7 @@ const ProjectsCardDiv = styled.div`
   h4,p{
     display: block;
   }
-`
+`;
 
 function ProjectsCard({project,creationDate,stage,iconNames,projectLink}){
 
