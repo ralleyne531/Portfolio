@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build:
@@ -31,6 +28,12 @@ jobs:
 
       # Step 4: Install dependencies and build the React app
       - name: Install dependencies and build
+        run: |
+          cd UI
+          npm install
+
+      # Step 5: Run tests
+      - name: Run tests
         run: |
           cd UI
           npm install
