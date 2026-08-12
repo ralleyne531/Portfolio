@@ -27,7 +27,7 @@ const ContactButton = styled.button`
 
 // Main Component
 const ContactStatus = () => {
-    let isOpen = true;
+    let isOpen = false;
     // const [isOpen, setIsOpen] = useState(true); // Default: Open for Work
 
     return (
