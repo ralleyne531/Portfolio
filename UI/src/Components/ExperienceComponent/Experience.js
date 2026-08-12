@@ -20,6 +20,12 @@ function Experience() {
             >
             </ExperienceCard>
             <ExperienceCard
+                jobTitle={"Software Engineer Intern"}
+                company={"Rocket Companies"}
+                tenure={"May 2024 - Dec 2024"}
+            >
+            </ExperienceCard>
+            <ExperienceCard
                 jobTitle={"B.A Computer Science"}
                 company={"Wake Forest University"}
                 tenure={"August 2020 - May 2025"}
