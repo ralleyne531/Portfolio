@@ -14,9 +14,9 @@ function Experience() {
             <h2>Experience</h2>
             <ExperienceDiv>
             <ExperienceCard
-                jobTitle={"Software Engineer Intern"}
-                company={"Rocket Companies"}
-                tenure={"May 2024 - Dec 2024"}
+                jobTitle={"Associate"}
+                company={"Infosys Ltd."}
+                tenure={"July 2026 - Present"}
             >
             </ExperienceCard>
             <ExperienceCard
